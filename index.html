@@ -1,45 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Web</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="img/supertux.png">
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
-        <header id="header">
-            <div class="wrap">
-                <div id="logo">
-                    <span class="icono"><i class='bx bxl-javascript'></i></span>
-                    <h1>DEVELOPER</h1>
-                </div>
-                <nav id="menu">
-                    <ul>
-                        <li><a href="#Inicio">Home</a></li>
-                        <li><a href="#Blog">Blog</a></li>
-                        <li><a href="#Proyectos">Projects</a></li>
-                        <li><a href="#Contacto">Contact</a></li>
-                    </ul>
-                </nav>
+
+<head>
+    <meta charset="utf-8">
+    <title>Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/supertux.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyB4pDFwnLgTrbOTU-YMCNpuITx__y8ir0A",
+            authDomain: "fancylanding-a0907.firebaseapp.com",
+            projectId: "fancylanding-a0907",
+            storageBucket: "fancylanding-a0907.appspot.com",
+            messagingSenderId: "616235768999",
+            appId: "1:616235768999:web:647e1ea2c58feefb39cf82",
+            measurementId: "G-0FWR5NMMCW"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="wrap">
+            <div id="logo">
+                <span class="icono"><i class='bx bxl-javascript'></i></span>
+                <h1>DEVELOPER</h1>
             </div>
-        </header>
-        <main>
-            <section id="Inicio">                
-                <img src="img/javascript.svg" alt="">                
-            </section>
-            <section id="Blog">                
-                <!-- <img src="img/javascript.svg" alt="">                 -->
-            </section>
-            <section id="Proyectos">                
-                <!-- <img src="img/javascript.svg" alt="">                 -->
-            </section>
-            <section id="Contacto">                
-                <!-- <img src="img/javascript.svg" alt="">                 -->
-            </section>
-        </main>
-    </body>
-    <footer>
-        <h3>Hecho con 🧡 por <a href="https://bravedeveloper.com" target="blank">BraveDeveloper</a> para todo el mundo.</h3>
-    </footer>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#Inicio">Home</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Proyectos">Projects</a></li>
+                    <li><a href="#Contacto">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="wrap">
+        <section id="Inicio">
+            <div id="registers">
+                <h3>Registro de usuarios</h3>
+                <input type="email" placeholder="Ingrese email">
+                <input type="password" placeholder="Ingrese contraseña">
+                <button>Registrar</button>
+            </div>
+            <!-- <img src="img/javascript.svg" alt=""> -->
+        </section>
+        <section id="Blog">
+            <p>sss</p>
+            <!-- <img src="img/javascript.svg" alt="">                 -->
+        </section>
+        <section id="Proyectos">
+            <!-- <img src="img/javascript.svg" alt="">                 -->
+        </section>
+        <section id="Contacto">
+            <!-- <img src="img/javascript.svg" alt="">                 -->
+        </section>
+    </main>
+</body>
+<footer>
+    <h3>Hecho con 🧡 por <a href="https://bravedeveloper.com" target="blank">BraveDeveloper</a> para todo el mundo.</h3>
+</footer>
+
 </html>

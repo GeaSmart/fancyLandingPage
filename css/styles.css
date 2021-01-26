@@ -82,6 +82,7 @@ body{
     height: 100vh;
     display: flex;    
     flex-direction: column;
+    padding-top: 70px;
 }
 #Inicio img{
     height: 500px;
